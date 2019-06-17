@@ -1,0 +1,2420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190614 16:05:21.992" generator="Robot 3.0.4 (Python 2.7.10 on win32)">
+<suite source="C:\Users\JuhaBohm\JeB\MoB.robot" id="s1" name="MoB">
+<test id="s1-t1" name="Eka">
+<kw name="Sano hei" library="tervehdys_resurssi">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Hello</arg>
+</arguments>
+<msg timestamp="20190614 16:05:22.191" level="INFO">Hello</msg>
+<status status="PASS" endtime="20190614 16:05:22.191" starttime="20190614 16:05:22.191"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>world !</arg>
+</arguments>
+<msg timestamp="20190614 16:05:22.191" level="INFO">world !</msg>
+<status status="PASS" endtime="20190614 16:05:22.191" starttime="20190614 16:05:22.191"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:22.191" starttime="20190614 16:05:22.190"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:22.192" critical="yes" starttime="20190614 16:05:22.190"></status>
+</test>
+<test id="s1-t2" name="Toka">
+<kw type="setup" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Case Started</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:22.196" starttime="20190614 16:05:22.195"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${url}</arg>
+<arg>browser=chrome</arg>
+</arguments>
+<msg timestamp="20190614 16:05:22.197" level="INFO">Opening browser 'chrome' to base url 'https://www.discshop.fi/login.php'.</msg>
+<status status="PASS" endtime="20190614 16:05:28.333" starttime="20190614 16:05:22.197"></status>
+</kw>
+<kw name="Login">
+<kw name="Input Text">
+<arguments>
+<arg>id=username</arg>
+<arg>@{CREDENTIALS}[0]</arg>
+</arguments>
+<msg timestamp="20190614 16:05:28.339" level="FAIL">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</msg>
+<status status="FAIL" endtime="20190614 16:05:28.339" starttime="20190614 16:05:28.338"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:28.340" starttime="20190614 16:05:28.336"></status>
+</kw>
+<kw type="teardown" name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Case Complete</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:28.344" starttime="20190614 16:05:28.342"></status>
+</kw>
+<tags>
+<tag>Toka</tag>
+</tags>
+<status status="FAIL" endtime="20190614 16:05:28.346" critical="yes" starttime="20190614 16:05:22.194">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</status>
+</test>
+<test id="s1-t3" name="Kolmas">
+<kw name="Login">
+<kw name="Input Text">
+<arguments>
+<arg>id=username</arg>
+<arg>@{CREDENTIALS}[0]</arg>
+</arguments>
+<msg timestamp="20190614 16:05:28.364" level="FAIL">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</msg>
+<status status="FAIL" endtime="20190614 16:05:28.364" starttime="20190614 16:05:28.364"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:28.365" starttime="20190614 16:05:28.362"></status>
+</kw>
+<tags>
+<tag>Kolmas</tag>
+</tags>
+<status status="FAIL" endtime="20190614 16:05:28.366" critical="yes" starttime="20190614 16:05:28.359">Multiple keywords with name 'Input Text' found. Give the full name of the keyword you want to use:
+    AppiumLibrary.Input Text
+    SeleniumLibrary.Input Text</status>
+</test>
+<test id="s1-t4" name="Neljas">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test four started</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:28.376" starttime="20190614 16:05:28.375"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://google.com</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190614 16:05:28.379" level="INFO">Opening browser 'chrome' to base url 'http://google.com'.</msg>
+<status status="PASS" endtime="20190614 16:05:34.047" starttime="20190614 16:05:28.378"></status>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190614 16:05:37.110" starttime="20190614 16:05:34.048"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test four completed</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.113" starttime="20190614 16:05:37.111"></status>
+</kw>
+<kw name="Set Tags" library="BuiltIn">
+<doc>Adds given ``tags`` for the current test or all tests in a suite.</doc>
+<arguments>
+<arg>SmokeTest</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.116" level="INFO">Set tag 'SmokeTest'.</msg>
+<status status="PASS" endtime="20190614 16:05:37.116" starttime="20190614 16:05:37.115"></status>
+</kw>
+<kw name="Remove Tags" library="BuiltIn">
+<doc>Removes given ``tags`` from the current test or all tests in a suite.</doc>
+<arguments>
+<arg>SmokeTest</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.120" level="INFO">Removed tag 'SmokeTest'.</msg>
+<status status="PASS" endtime="20190614 16:05:37.121" starttime="20190614 16:05:37.118"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" endtime="20190614 16:05:37.124" critical="yes" starttime="20190614 16:05:28.373"></status>
+</test>
+<test id="s1-t5" name="Viides">
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Viides started</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.139" starttime="20190614 16:05:37.137"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>Test Viides completed</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.143" starttime="20190614 16:05:37.142"></status>
+</kw>
+<tags>
+<tag>Sanity</tag>
+</tags>
+<status status="PASS" endtime="20190614 16:05:37.146" critical="yes" starttime="20190614 16:05:37.131"></status>
+</test>
+<test id="s1-t6" name="Jos">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>'${status}'=='PASS'</arg>
+<arg>AnotherAction</arg>
+</arguments>
+<kw name="AnotherAction">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Another action</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.159" level="INFO">Another action</msg>
+<status status="PASS" endtime="20190614 16:05:37.159" starttime="20190614 16:05:37.159"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.160" starttime="20190614 16:05:37.158"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.160" starttime="20190614 16:05:37.157"></status>
+</kw>
+<tags>
+<tag>Jos</tag>
+</tags>
+<status status="PASS" endtime="20190614 16:05:37.161" critical="yes" starttime="20190614 16:05:37.152"></status>
+</test>
+<test id="s1-t7" name="TokaJos">
+<kw type="for" name="${var} IN [ @{fibo} ]">
+<kw type="foritem" name="${var} = 1">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&lt;="2"</arg>
+<arg>Slogan1</arg>
+</arguments>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.170" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.170" starttime="20190614 16:05:37.170"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.170" starttime="20190614 16:05:37.169"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.170" starttime="20190614 16:05:37.168"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&gt;"2"</arg>
+<arg>Slogan2</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.171" starttime="20190614 16:05:37.171"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.171" starttime="20190614 16:05:37.168"></status>
+</kw>
+<kw type="foritem" name="${var} = 1">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&lt;="2"</arg>
+<arg>Slogan1</arg>
+</arguments>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.173" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.174" starttime="20190614 16:05:37.173"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.174" starttime="20190614 16:05:37.173"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.174" starttime="20190614 16:05:37.172"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&gt;"2"</arg>
+<arg>Slogan2</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.174" starttime="20190614 16:05:37.174"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.174" starttime="20190614 16:05:37.172"></status>
+</kw>
+<kw type="foritem" name="${var} = 2">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&lt;="2"</arg>
+<arg>Slogan1</arg>
+</arguments>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.176" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.176" starttime="20190614 16:05:37.175"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.176" starttime="20190614 16:05:37.175"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.176" starttime="20190614 16:05:37.174"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&gt;"2"</arg>
+<arg>Slogan2</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.177" starttime="20190614 16:05:37.177"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.177" starttime="20190614 16:05:37.174"></status>
+</kw>
+<kw type="foritem" name="${var} = 3">
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&lt;="2"</arg>
+<arg>Slogan1</arg>
+</arguments>
+<status status="PASS" endtime="20190614 16:05:37.178" starttime="20190614 16:05:37.178"></status>
+</kw>
+<kw name="Run Keyword If" library="BuiltIn">
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<arguments>
+<arg>"${var}"&gt;"2"</arg>
+<arg>Slogan2</arg>
+</arguments>
+<kw name="Slogan2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>I'm so bad, baby, I don't care</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.180" level="INFO">I'm so bad, baby, I don't care</msg>
+<status status="PASS" endtime="20190614 16:05:37.180" starttime="20190614 16:05:37.180"></status>
+</kw>
+<kw name="A">
+<msg timestamp="20190614 16:05:37.190" level="FAIL">No keyword with name 'A' found.</msg>
+<status status="FAIL" endtime="20190614 16:05:37.190" starttime="20190614 16:05:37.190"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.190" starttime="20190614 16:05:37.179"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.191" starttime="20190614 16:05:37.178"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.191" starttime="20190614 16:05:37.177"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.191" starttime="20190614 16:05:37.168"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.192" critical="yes" starttime="20190614 16:05:37.165">No keyword with name 'A' found.</status>
+</test>
+<test id="s1-t8" name="RangeSilmukka">
+<kw type="for" name="${var} IN RANGE [ 6 ]">
+<kw type="foritem" name="${var} = 0">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.198" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.198" starttime="20190614 16:05:37.197"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.198" starttime="20190614 16:05:37.197"></status>
+</kw>
+<kw type="foritem" name="${var} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.199" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.199" starttime="20190614 16:05:37.198"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.199" starttime="20190614 16:05:37.198"></status>
+</kw>
+<kw type="foritem" name="${var} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.200" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.200" starttime="20190614 16:05:37.199"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.200" starttime="20190614 16:05:37.199"></status>
+</kw>
+<kw type="foritem" name="${var} = 3">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.201" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.201" starttime="20190614 16:05:37.201"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.201" starttime="20190614 16:05:37.200"></status>
+</kw>
+<kw type="foritem" name="${var} = 4">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.202" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.202" starttime="20190614 16:05:37.202"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.202" starttime="20190614 16:05:37.201"></status>
+</kw>
+<kw type="foritem" name="${var} = 5">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.203" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.203" starttime="20190614 16:05:37.203"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.203" starttime="20190614 16:05:37.203"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.204" starttime="20190614 16:05:37.197"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.206" critical="yes" starttime="20190614 16:05:37.196"></status>
+</test>
+<test id="s1-t9" name="Silmukka">
+<kw type="for" name="${var} IN [ @{fibo} ]">
+<kw type="foritem" name="${var} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.217" level="INFO">1</msg>
+<status status="PASS" endtime="20190614 16:05:37.217" starttime="20190614 16:05:37.216"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.217" starttime="20190614 16:05:37.216"></status>
+</kw>
+<kw type="foritem" name="${var} = 1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.218" level="INFO">1</msg>
+<status status="PASS" endtime="20190614 16:05:37.218" starttime="20190614 16:05:37.218"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.218" starttime="20190614 16:05:37.218"></status>
+</kw>
+<kw type="foritem" name="${var} = 2">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.219" level="INFO">2</msg>
+<status status="PASS" endtime="20190614 16:05:37.219" starttime="20190614 16:05:37.219"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.220" starttime="20190614 16:05:37.219"></status>
+</kw>
+<kw type="foritem" name="${var} = 3">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.220" level="INFO">3</msg>
+<status status="PASS" endtime="20190614 16:05:37.221" starttime="20190614 16:05:37.220"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.221" starttime="20190614 16:05:37.220"></status>
+</kw>
+<kw type="foritem" name="${var} = 5">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.222" level="INFO">5</msg>
+<status status="PASS" endtime="20190614 16:05:37.222" starttime="20190614 16:05:37.221"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.222" starttime="20190614 16:05:37.221"></status>
+</kw>
+<kw type="foritem" name="${var} = 8">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.223" level="INFO">8</msg>
+<status status="PASS" endtime="20190614 16:05:37.224" starttime="20190614 16:05:37.223"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.224" starttime="20190614 16:05:37.222"></status>
+</kw>
+<kw type="foritem" name="${var} = 13">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${var}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.225" level="INFO">13</msg>
+<status status="PASS" endtime="20190614 16:05:37.225" starttime="20190614 16:05:37.224"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.225" starttime="20190614 16:05:37.224"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.225" starttime="20190614 16:05:37.216"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.226" critical="yes" starttime="20190614 16:05:37.211"></status>
+</test>
+<test id="s1-t10" name="RepeatSilmukka">
+<kw name="Repeat Keyword" library="BuiltIn">
+<doc>Executes the specified keyword multiple times.</doc>
+<arguments>
+<arg>${arvo}</arg>
+<arg>Slogan1</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.231" level="INFO">Repeating keyword, round 1/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.232" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.232" starttime="20190614 16:05:37.231"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.232" starttime="20190614 16:05:37.231"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.232" level="INFO">Repeating keyword, round 2/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.233" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.233" starttime="20190614 16:05:37.232"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.233" starttime="20190614 16:05:37.232"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.233" level="INFO">Repeating keyword, round 3/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.235" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.235" starttime="20190614 16:05:37.234"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.235" starttime="20190614 16:05:37.234"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.235" level="INFO">Repeating keyword, round 4/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.237" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.237" starttime="20190614 16:05:37.236"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.237" starttime="20190614 16:05:37.235"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.237" level="INFO">Repeating keyword, round 5/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.239" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.239" starttime="20190614 16:05:37.238"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.239" starttime="20190614 16:05:37.238"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.239" level="INFO">Repeating keyword, round 6/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.240" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.241" starttime="20190614 16:05:37.240"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.241" starttime="20190614 16:05:37.240"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.241" level="INFO">Repeating keyword, round 7/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.242" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.242" starttime="20190614 16:05:37.242"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.242" starttime="20190614 16:05:37.241"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.242" level="INFO">Repeating keyword, round 8/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.244" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.244" starttime="20190614 16:05:37.243"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.244" starttime="20190614 16:05:37.243"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.244" level="INFO">Repeating keyword, round 9/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.245" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.245" starttime="20190614 16:05:37.245"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.246" starttime="20190614 16:05:37.244"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.246" level="INFO">Repeating keyword, round 10/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.247" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.247" starttime="20190614 16:05:37.247"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.247" starttime="20190614 16:05:37.246"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.247" level="INFO">Repeating keyword, round 11/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.248" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.248" starttime="20190614 16:05:37.248"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.249" starttime="20190614 16:05:37.247"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.249" level="INFO">Repeating keyword, round 12/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.250" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.250" starttime="20190614 16:05:37.249"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.250" starttime="20190614 16:05:37.249"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.250" level="INFO">Repeating keyword, round 13/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.251" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.252" starttime="20190614 16:05:37.251"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.252" starttime="20190614 16:05:37.251"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.252" level="INFO">Repeating keyword, round 14/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.253" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.253" starttime="20190614 16:05:37.253"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.254" starttime="20190614 16:05:37.252"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.254" level="INFO">Repeating keyword, round 15/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.256" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.256" starttime="20190614 16:05:37.255"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.256" starttime="20190614 16:05:37.254"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.256" level="INFO">Repeating keyword, round 16/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.258" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.258" starttime="20190614 16:05:37.257"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.258" starttime="20190614 16:05:37.257"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.258" level="INFO">Repeating keyword, round 17/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.260" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.260" starttime="20190614 16:05:37.260"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.260" starttime="20190614 16:05:37.259"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.260" level="INFO">Repeating keyword, round 18/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.261" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.262" starttime="20190614 16:05:37.261"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.262" starttime="20190614 16:05:37.261"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.262" level="INFO">Repeating keyword, round 19/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.263" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.263" starttime="20190614 16:05:37.263"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.263" starttime="20190614 16:05:37.262"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.263" level="INFO">Repeating keyword, round 20/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.264" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.265" starttime="20190614 16:05:37.264"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.265" starttime="20190614 16:05:37.264"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.265" level="INFO">Repeating keyword, round 21/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.266" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.266" starttime="20190614 16:05:37.266"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.266" starttime="20190614 16:05:37.265"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.267" level="INFO">Repeating keyword, round 22/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.268" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.268" starttime="20190614 16:05:37.267"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.268" starttime="20190614 16:05:37.267"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.268" level="INFO">Repeating keyword, round 23/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.269" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.269" starttime="20190614 16:05:37.269"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.270" starttime="20190614 16:05:37.268"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.270" level="INFO">Repeating keyword, round 24/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.272" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.272" starttime="20190614 16:05:37.271"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.272" starttime="20190614 16:05:37.270"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.272" level="INFO">Repeating keyword, round 25/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.273" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.274" starttime="20190614 16:05:37.273"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.274" starttime="20190614 16:05:37.272"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.274" level="INFO">Repeating keyword, round 26/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.275" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.275" starttime="20190614 16:05:37.275"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.275" starttime="20190614 16:05:37.274"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.276" level="INFO">Repeating keyword, round 27/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.276" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.276" starttime="20190614 16:05:37.276"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.277" starttime="20190614 16:05:37.276"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.277" level="INFO">Repeating keyword, round 28/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.278" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.278" starttime="20190614 16:05:37.278"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.278" starttime="20190614 16:05:37.277"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.278" level="INFO">Repeating keyword, round 29/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.279" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.279" starttime="20190614 16:05:37.279"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.280" starttime="20190614 16:05:37.279"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.280" level="INFO">Repeating keyword, round 30/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.281" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.281" starttime="20190614 16:05:37.281"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.281" starttime="20190614 16:05:37.280"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.281" level="INFO">Repeating keyword, round 31/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.283" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.283" starttime="20190614 16:05:37.282"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.283" starttime="20190614 16:05:37.282"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.283" level="INFO">Repeating keyword, round 32/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.284" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.284" starttime="20190614 16:05:37.284"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.285" starttime="20190614 16:05:37.283"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.285" level="INFO">Repeating keyword, round 33/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.286" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.286" starttime="20190614 16:05:37.285"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.286" starttime="20190614 16:05:37.285"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.286" level="INFO">Repeating keyword, round 34/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.287" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.287" starttime="20190614 16:05:37.287"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.288" starttime="20190614 16:05:37.286"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.288" level="INFO">Repeating keyword, round 35/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.289" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.289" starttime="20190614 16:05:37.288"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.289" starttime="20190614 16:05:37.288"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.289" level="INFO">Repeating keyword, round 36/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.290" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.290" starttime="20190614 16:05:37.290"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.290" starttime="20190614 16:05:37.289"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.290" level="INFO">Repeating keyword, round 37/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.291" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.291" starttime="20190614 16:05:37.291"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.292" starttime="20190614 16:05:37.291"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.292" level="INFO">Repeating keyword, round 38/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.293" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.293" starttime="20190614 16:05:37.292"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.293" starttime="20190614 16:05:37.292"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.293" level="INFO">Repeating keyword, round 39/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.294" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.294" starttime="20190614 16:05:37.294"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.295" starttime="20190614 16:05:37.293"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.295" level="INFO">Repeating keyword, round 40/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.296" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.296" starttime="20190614 16:05:37.296"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.296" starttime="20190614 16:05:37.295"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.296" level="INFO">Repeating keyword, round 41/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.297" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.298" starttime="20190614 16:05:37.297"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.298" starttime="20190614 16:05:37.297"></status>
+</kw>
+<msg timestamp="20190614 16:05:37.298" level="INFO">Repeating keyword, round 42/42.</msg>
+<kw name="Slogan1">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Born to lose, live to win</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.299" level="INFO">Born to lose, live to win</msg>
+<status status="PASS" endtime="20190614 16:05:37.299" starttime="20190614 16:05:37.299"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.299" starttime="20190614 16:05:37.298"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.299" starttime="20190614 16:05:37.230"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.300" critical="yes" starttime="20190614 16:05:37.229"></status>
+</test>
+<test id="s1-t11" name="Laskuri">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${nolla}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.307" level="INFO">${laskuri} = 1</msg>
+<status status="PASS" endtime="20190614 16:05:37.307" starttime="20190614 16:05:37.307"></status>
+</kw>
+<kw type="for" name="${var} IN RANGE [ 99 ]">
+<kw type="foritem" name="${var} = 0">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.310" level="INFO">${laskuri} = 2</msg>
+<status status="PASS" endtime="20190614 16:05:37.310" starttime="20190614 16:05:37.309"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.310" starttime="20190614 16:05:37.308"></status>
+</kw>
+<kw type="foritem" name="${var} = 1">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.311" level="INFO">${laskuri} = 3</msg>
+<status status="PASS" endtime="20190614 16:05:37.311" starttime="20190614 16:05:37.310"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.311" starttime="20190614 16:05:37.310"></status>
+</kw>
+<kw type="foritem" name="${var} = 2">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.313" level="INFO">${laskuri} = 4</msg>
+<status status="PASS" endtime="20190614 16:05:37.313" starttime="20190614 16:05:37.311"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.313" starttime="20190614 16:05:37.311"></status>
+</kw>
+<kw type="foritem" name="${var} = 3">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.314" level="INFO">${laskuri} = 5</msg>
+<status status="PASS" endtime="20190614 16:05:37.314" starttime="20190614 16:05:37.314"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.314" starttime="20190614 16:05:37.313"></status>
+</kw>
+<kw type="foritem" name="${var} = 4">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.315" level="INFO">${laskuri} = 6</msg>
+<status status="PASS" endtime="20190614 16:05:37.316" starttime="20190614 16:05:37.315"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.316" starttime="20190614 16:05:37.315"></status>
+</kw>
+<kw type="foritem" name="${var} = 5">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.316" level="INFO">${laskuri} = 7</msg>
+<status status="PASS" endtime="20190614 16:05:37.317" starttime="20190614 16:05:37.316"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.317" starttime="20190614 16:05:37.316"></status>
+</kw>
+<kw type="foritem" name="${var} = 6">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.318" level="INFO">${laskuri} = 8</msg>
+<status status="PASS" endtime="20190614 16:05:37.318" starttime="20190614 16:05:37.317"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.318" starttime="20190614 16:05:37.317"></status>
+</kw>
+<kw type="foritem" name="${var} = 7">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.320" level="INFO">${laskuri} = 9</msg>
+<status status="PASS" endtime="20190614 16:05:37.320" starttime="20190614 16:05:37.318"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.320" starttime="20190614 16:05:37.318"></status>
+</kw>
+<kw type="foritem" name="${var} = 8">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.322" level="INFO">${laskuri} = 10</msg>
+<status status="PASS" endtime="20190614 16:05:37.322" starttime="20190614 16:05:37.321"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.322" starttime="20190614 16:05:37.320"></status>
+</kw>
+<kw type="foritem" name="${var} = 9">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.324" level="INFO">${laskuri} = 11</msg>
+<status status="PASS" endtime="20190614 16:05:37.324" starttime="20190614 16:05:37.323"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.324" starttime="20190614 16:05:37.322"></status>
+</kw>
+<kw type="foritem" name="${var} = 10">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.325" level="INFO">${laskuri} = 12</msg>
+<status status="PASS" endtime="20190614 16:05:37.325" starttime="20190614 16:05:37.324"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.325" starttime="20190614 16:05:37.324"></status>
+</kw>
+<kw type="foritem" name="${var} = 11">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.326" level="INFO">${laskuri} = 13</msg>
+<status status="PASS" endtime="20190614 16:05:37.326" starttime="20190614 16:05:37.326"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.326" starttime="20190614 16:05:37.325"></status>
+</kw>
+<kw type="foritem" name="${var} = 12">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.327" level="INFO">${laskuri} = 14</msg>
+<status status="PASS" endtime="20190614 16:05:37.327" starttime="20190614 16:05:37.327"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.328" starttime="20190614 16:05:37.327"></status>
+</kw>
+<kw type="foritem" name="${var} = 13">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.328" level="INFO">${laskuri} = 15</msg>
+<status status="PASS" endtime="20190614 16:05:37.328" starttime="20190614 16:05:37.328"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.329" starttime="20190614 16:05:37.328"></status>
+</kw>
+<kw type="foritem" name="${var} = 14">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.330" level="INFO">${laskuri} = 16</msg>
+<status status="PASS" endtime="20190614 16:05:37.330" starttime="20190614 16:05:37.329"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.330" starttime="20190614 16:05:37.329"></status>
+</kw>
+<kw type="foritem" name="${var} = 15">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.330" level="INFO">${laskuri} = 17</msg>
+<status status="PASS" endtime="20190614 16:05:37.330" starttime="20190614 16:05:37.330"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.330" starttime="20190614 16:05:37.330"></status>
+</kw>
+<kw type="foritem" name="${var} = 16">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.332" level="INFO">${laskuri} = 18</msg>
+<status status="PASS" endtime="20190614 16:05:37.332" starttime="20190614 16:05:37.331"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.332" starttime="20190614 16:05:37.331"></status>
+</kw>
+<kw type="foritem" name="${var} = 17">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.333" level="INFO">${laskuri} = 19</msg>
+<status status="PASS" endtime="20190614 16:05:37.333" starttime="20190614 16:05:37.332"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.333" starttime="20190614 16:05:37.332"></status>
+</kw>
+<kw type="foritem" name="${var} = 18">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.334" level="INFO">${laskuri} = 20</msg>
+<status status="PASS" endtime="20190614 16:05:37.334" starttime="20190614 16:05:37.333"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.334" starttime="20190614 16:05:37.333"></status>
+</kw>
+<kw type="foritem" name="${var} = 19">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.335" level="INFO">${laskuri} = 21</msg>
+<status status="PASS" endtime="20190614 16:05:37.335" starttime="20190614 16:05:37.334"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.335" starttime="20190614 16:05:37.334"></status>
+</kw>
+<kw type="foritem" name="${var} = 20">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.336" level="INFO">${laskuri} = 22</msg>
+<status status="PASS" endtime="20190614 16:05:37.336" starttime="20190614 16:05:37.335"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.336" starttime="20190614 16:05:37.335"></status>
+</kw>
+<kw type="foritem" name="${var} = 21">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.338" level="INFO">${laskuri} = 23</msg>
+<status status="PASS" endtime="20190614 16:05:37.338" starttime="20190614 16:05:37.337"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.338" starttime="20190614 16:05:37.336"></status>
+</kw>
+<kw type="foritem" name="${var} = 22">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.339" level="INFO">${laskuri} = 24</msg>
+<status status="PASS" endtime="20190614 16:05:37.339" starttime="20190614 16:05:37.338"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.339" starttime="20190614 16:05:37.338"></status>
+</kw>
+<kw type="foritem" name="${var} = 23">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.341" level="INFO">${laskuri} = 25</msg>
+<status status="PASS" endtime="20190614 16:05:37.341" starttime="20190614 16:05:37.340"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.341" starttime="20190614 16:05:37.339"></status>
+</kw>
+<kw type="foritem" name="${var} = 24">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.342" level="INFO">${laskuri} = 26</msg>
+<status status="PASS" endtime="20190614 16:05:37.342" starttime="20190614 16:05:37.341"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.342" starttime="20190614 16:05:37.341"></status>
+</kw>
+<kw type="foritem" name="${var} = 25">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.343" level="INFO">${laskuri} = 27</msg>
+<status status="PASS" endtime="20190614 16:05:37.343" starttime="20190614 16:05:37.343"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.344" starttime="20190614 16:05:37.342"></status>
+</kw>
+<kw type="foritem" name="${var} = 26">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.345" level="INFO">${laskuri} = 28</msg>
+<status status="PASS" endtime="20190614 16:05:37.345" starttime="20190614 16:05:37.344"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.345" starttime="20190614 16:05:37.344"></status>
+</kw>
+<kw type="foritem" name="${var} = 27">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.346" level="INFO">${laskuri} = 29</msg>
+<status status="PASS" endtime="20190614 16:05:37.346" starttime="20190614 16:05:37.345"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.346" starttime="20190614 16:05:37.345"></status>
+</kw>
+<kw type="foritem" name="${var} = 28">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.347" level="INFO">${laskuri} = 30</msg>
+<status status="PASS" endtime="20190614 16:05:37.347" starttime="20190614 16:05:37.346"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.347" starttime="20190614 16:05:37.346"></status>
+</kw>
+<kw type="foritem" name="${var} = 29">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.349" level="INFO">${laskuri} = 31</msg>
+<status status="PASS" endtime="20190614 16:05:37.349" starttime="20190614 16:05:37.348"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.349" starttime="20190614 16:05:37.347"></status>
+</kw>
+<kw type="foritem" name="${var} = 30">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.349" level="INFO">${laskuri} = 32</msg>
+<status status="PASS" endtime="20190614 16:05:37.350" starttime="20190614 16:05:37.349"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.350" starttime="20190614 16:05:37.349"></status>
+</kw>
+<kw type="foritem" name="${var} = 31">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.351" level="INFO">${laskuri} = 33</msg>
+<status status="PASS" endtime="20190614 16:05:37.351" starttime="20190614 16:05:37.350"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.351" starttime="20190614 16:05:37.350"></status>
+</kw>
+<kw type="foritem" name="${var} = 32">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.352" level="INFO">${laskuri} = 34</msg>
+<status status="PASS" endtime="20190614 16:05:37.352" starttime="20190614 16:05:37.351"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.352" starttime="20190614 16:05:37.351"></status>
+</kw>
+<kw type="foritem" name="${var} = 33">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.353" level="INFO">${laskuri} = 35</msg>
+<status status="PASS" endtime="20190614 16:05:37.353" starttime="20190614 16:05:37.353"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.354" starttime="20190614 16:05:37.352"></status>
+</kw>
+<kw type="foritem" name="${var} = 34">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.354" level="INFO">${laskuri} = 36</msg>
+<status status="PASS" endtime="20190614 16:05:37.355" starttime="20190614 16:05:37.354"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.355" starttime="20190614 16:05:37.354"></status>
+</kw>
+<kw type="foritem" name="${var} = 35">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.356" level="INFO">${laskuri} = 37</msg>
+<status status="PASS" endtime="20190614 16:05:37.356" starttime="20190614 16:05:37.355"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.356" starttime="20190614 16:05:37.355"></status>
+</kw>
+<kw type="foritem" name="${var} = 36">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.357" level="INFO">${laskuri} = 38</msg>
+<status status="PASS" endtime="20190614 16:05:37.357" starttime="20190614 16:05:37.356"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.357" starttime="20190614 16:05:37.356"></status>
+</kw>
+<kw type="foritem" name="${var} = 37">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.357" level="INFO">${laskuri} = 39</msg>
+<status status="PASS" endtime="20190614 16:05:37.358" starttime="20190614 16:05:37.357"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.358" starttime="20190614 16:05:37.357"></status>
+</kw>
+<kw type="foritem" name="${var} = 38">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.359" level="INFO">${laskuri} = 40</msg>
+<status status="PASS" endtime="20190614 16:05:37.359" starttime="20190614 16:05:37.358"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.359" starttime="20190614 16:05:37.358"></status>
+</kw>
+<kw type="foritem" name="${var} = 39">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.360" level="INFO">${laskuri} = 41</msg>
+<status status="PASS" endtime="20190614 16:05:37.360" starttime="20190614 16:05:37.359"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.360" starttime="20190614 16:05:37.359"></status>
+</kw>
+<kw type="foritem" name="${var} = 40">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.362" level="INFO">${laskuri} = 42</msg>
+<status status="PASS" endtime="20190614 16:05:37.362" starttime="20190614 16:05:37.361"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.362" starttime="20190614 16:05:37.361"></status>
+</kw>
+<kw type="foritem" name="${var} = 41">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.363" level="INFO">${laskuri} = 43</msg>
+<status status="PASS" endtime="20190614 16:05:37.363" starttime="20190614 16:05:37.362"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.363" starttime="20190614 16:05:37.362"></status>
+</kw>
+<kw type="foritem" name="${var} = 42">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.364" level="INFO">${laskuri} = 44</msg>
+<status status="PASS" endtime="20190614 16:05:37.364" starttime="20190614 16:05:37.363"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.364" starttime="20190614 16:05:37.363"></status>
+</kw>
+<kw type="foritem" name="${var} = 43">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.365" level="INFO">${laskuri} = 45</msg>
+<status status="PASS" endtime="20190614 16:05:37.365" starttime="20190614 16:05:37.365"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.366" starttime="20190614 16:05:37.364"></status>
+</kw>
+<kw type="foritem" name="${var} = 44">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.367" level="INFO">${laskuri} = 46</msg>
+<status status="PASS" endtime="20190614 16:05:37.367" starttime="20190614 16:05:37.366"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.367" starttime="20190614 16:05:37.366"></status>
+</kw>
+<kw type="foritem" name="${var} = 45">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.368" level="INFO">${laskuri} = 47</msg>
+<status status="PASS" endtime="20190614 16:05:37.368" starttime="20190614 16:05:37.367"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.368" starttime="20190614 16:05:37.367"></status>
+</kw>
+<kw type="foritem" name="${var} = 46">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.370" level="INFO">${laskuri} = 48</msg>
+<status status="PASS" endtime="20190614 16:05:37.370" starttime="20190614 16:05:37.368"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.370" starttime="20190614 16:05:37.368"></status>
+</kw>
+<kw type="foritem" name="${var} = 47">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.371" level="INFO">${laskuri} = 49</msg>
+<status status="PASS" endtime="20190614 16:05:37.371" starttime="20190614 16:05:37.370"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.371" starttime="20190614 16:05:37.370"></status>
+</kw>
+<kw type="foritem" name="${var} = 48">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.372" level="INFO">${laskuri} = 50</msg>
+<status status="PASS" endtime="20190614 16:05:37.373" starttime="20190614 16:05:37.372"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.373" starttime="20190614 16:05:37.371"></status>
+</kw>
+<kw type="foritem" name="${var} = 49">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.374" level="INFO">${laskuri} = 51</msg>
+<status status="PASS" endtime="20190614 16:05:37.374" starttime="20190614 16:05:37.373"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.374" starttime="20190614 16:05:37.373"></status>
+</kw>
+<kw type="foritem" name="${var} = 50">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.375" level="INFO">${laskuri} = 52</msg>
+<status status="PASS" endtime="20190614 16:05:37.375" starttime="20190614 16:05:37.374"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.375" starttime="20190614 16:05:37.374"></status>
+</kw>
+<kw type="foritem" name="${var} = 51">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.376" level="INFO">${laskuri} = 53</msg>
+<status status="PASS" endtime="20190614 16:05:37.376" starttime="20190614 16:05:37.376"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.377" starttime="20190614 16:05:37.375"></status>
+</kw>
+<kw type="foritem" name="${var} = 52">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.378" level="INFO">${laskuri} = 54</msg>
+<status status="PASS" endtime="20190614 16:05:37.378" starttime="20190614 16:05:37.377"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.378" starttime="20190614 16:05:37.377"></status>
+</kw>
+<kw type="foritem" name="${var} = 53">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.379" level="INFO">${laskuri} = 55</msg>
+<status status="PASS" endtime="20190614 16:05:37.379" starttime="20190614 16:05:37.378"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.379" starttime="20190614 16:05:37.378"></status>
+</kw>
+<kw type="foritem" name="${var} = 54">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.380" level="INFO">${laskuri} = 56</msg>
+<status status="PASS" endtime="20190614 16:05:37.381" starttime="20190614 16:05:37.380"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.381" starttime="20190614 16:05:37.380"></status>
+</kw>
+<kw type="foritem" name="${var} = 55">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.382" level="INFO">${laskuri} = 57</msg>
+<status status="PASS" endtime="20190614 16:05:37.382" starttime="20190614 16:05:37.381"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.382" starttime="20190614 16:05:37.381"></status>
+</kw>
+<kw type="foritem" name="${var} = 56">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.383" level="INFO">${laskuri} = 58</msg>
+<status status="PASS" endtime="20190614 16:05:37.383" starttime="20190614 16:05:37.382"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.383" starttime="20190614 16:05:37.382"></status>
+</kw>
+<kw type="foritem" name="${var} = 57">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.384" level="INFO">${laskuri} = 59</msg>
+<status status="PASS" endtime="20190614 16:05:37.384" starttime="20190614 16:05:37.384"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.384" starttime="20190614 16:05:37.383"></status>
+</kw>
+<kw type="foritem" name="${var} = 58">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.386" level="INFO">${laskuri} = 60</msg>
+<status status="PASS" endtime="20190614 16:05:37.386" starttime="20190614 16:05:37.385"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.386" starttime="20190614 16:05:37.385"></status>
+</kw>
+<kw type="foritem" name="${var} = 59">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.387" level="INFO">${laskuri} = 61</msg>
+<status status="PASS" endtime="20190614 16:05:37.387" starttime="20190614 16:05:37.386"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.387" starttime="20190614 16:05:37.386"></status>
+</kw>
+<kw type="foritem" name="${var} = 60">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.388" level="INFO">${laskuri} = 62</msg>
+<status status="PASS" endtime="20190614 16:05:37.389" starttime="20190614 16:05:37.388"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.389" starttime="20190614 16:05:37.387"></status>
+</kw>
+<kw type="foritem" name="${var} = 61">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.390" level="INFO">${laskuri} = 63</msg>
+<status status="PASS" endtime="20190614 16:05:37.390" starttime="20190614 16:05:37.389"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.390" starttime="20190614 16:05:37.389"></status>
+</kw>
+<kw type="foritem" name="${var} = 62">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.391" level="INFO">${laskuri} = 64</msg>
+<status status="PASS" endtime="20190614 16:05:37.391" starttime="20190614 16:05:37.390"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.391" starttime="20190614 16:05:37.390"></status>
+</kw>
+<kw type="foritem" name="${var} = 63">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.392" level="INFO">${laskuri} = 65</msg>
+<status status="PASS" endtime="20190614 16:05:37.392" starttime="20190614 16:05:37.391"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.392" starttime="20190614 16:05:37.391"></status>
+</kw>
+<kw type="foritem" name="${var} = 64">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.393" level="INFO">${laskuri} = 66</msg>
+<status status="PASS" endtime="20190614 16:05:37.393" starttime="20190614 16:05:37.393"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.393" starttime="20190614 16:05:37.392"></status>
+</kw>
+<kw type="foritem" name="${var} = 65">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.395" level="INFO">${laskuri} = 67</msg>
+<status status="PASS" endtime="20190614 16:05:37.395" starttime="20190614 16:05:37.394"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.395" starttime="20190614 16:05:37.394"></status>
+</kw>
+<kw type="foritem" name="${var} = 66">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.396" level="INFO">${laskuri} = 68</msg>
+<status status="PASS" endtime="20190614 16:05:37.396" starttime="20190614 16:05:37.395"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.396" starttime="20190614 16:05:37.395"></status>
+</kw>
+<kw type="foritem" name="${var} = 67">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.397" level="INFO">${laskuri} = 69</msg>
+<status status="PASS" endtime="20190614 16:05:37.397" starttime="20190614 16:05:37.396"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.397" starttime="20190614 16:05:37.396"></status>
+</kw>
+<kw type="foritem" name="${var} = 68">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.398" level="INFO">${laskuri} = 70</msg>
+<status status="PASS" endtime="20190614 16:05:37.399" starttime="20190614 16:05:37.398"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.399" starttime="20190614 16:05:37.397"></status>
+</kw>
+<kw type="foritem" name="${var} = 69">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.400" level="INFO">${laskuri} = 71</msg>
+<status status="PASS" endtime="20190614 16:05:37.400" starttime="20190614 16:05:37.399"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.400" starttime="20190614 16:05:37.399"></status>
+</kw>
+<kw type="foritem" name="${var} = 70">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.401" level="INFO">${laskuri} = 72</msg>
+<status status="PASS" endtime="20190614 16:05:37.401" starttime="20190614 16:05:37.401"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.401" starttime="20190614 16:05:37.400"></status>
+</kw>
+<kw type="foritem" name="${var} = 71">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.402" level="INFO">${laskuri} = 73</msg>
+<status status="PASS" endtime="20190614 16:05:37.402" starttime="20190614 16:05:37.402"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.402" starttime="20190614 16:05:37.401"></status>
+</kw>
+<kw type="foritem" name="${var} = 72">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.404" level="INFO">${laskuri} = 74</msg>
+<status status="PASS" endtime="20190614 16:05:37.404" starttime="20190614 16:05:37.403"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.404" starttime="20190614 16:05:37.403"></status>
+</kw>
+<kw type="foritem" name="${var} = 73">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.404" level="INFO">${laskuri} = 75</msg>
+<status status="PASS" endtime="20190614 16:05:37.405" starttime="20190614 16:05:37.404"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.405" starttime="20190614 16:05:37.404"></status>
+</kw>
+<kw type="foritem" name="${var} = 74">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.406" level="INFO">${laskuri} = 76</msg>
+<status status="PASS" endtime="20190614 16:05:37.406" starttime="20190614 16:05:37.405"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.406" starttime="20190614 16:05:37.405"></status>
+</kw>
+<kw type="foritem" name="${var} = 75">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.407" level="INFO">${laskuri} = 77</msg>
+<status status="PASS" endtime="20190614 16:05:37.407" starttime="20190614 16:05:37.406"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.407" starttime="20190614 16:05:37.406"></status>
+</kw>
+<kw type="foritem" name="${var} = 76">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.408" level="INFO">${laskuri} = 78</msg>
+<status status="PASS" endtime="20190614 16:05:37.409" starttime="20190614 16:05:37.408"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.409" starttime="20190614 16:05:37.408"></status>
+</kw>
+<kw type="foritem" name="${var} = 77">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.410" level="INFO">${laskuri} = 79</msg>
+<status status="PASS" endtime="20190614 16:05:37.410" starttime="20190614 16:05:37.409"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.410" starttime="20190614 16:05:37.409"></status>
+</kw>
+<kw type="foritem" name="${var} = 78">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.411" level="INFO">${laskuri} = 80</msg>
+<status status="PASS" endtime="20190614 16:05:37.411" starttime="20190614 16:05:37.410"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.411" starttime="20190614 16:05:37.410"></status>
+</kw>
+<kw type="foritem" name="${var} = 79">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.412" level="INFO">${laskuri} = 81</msg>
+<status status="PASS" endtime="20190614 16:05:37.412" starttime="20190614 16:05:37.412"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.413" starttime="20190614 16:05:37.411"></status>
+</kw>
+<kw type="foritem" name="${var} = 80">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.414" level="INFO">${laskuri} = 82</msg>
+<status status="PASS" endtime="20190614 16:05:37.414" starttime="20190614 16:05:37.413"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.414" starttime="20190614 16:05:37.413"></status>
+</kw>
+<kw type="foritem" name="${var} = 81">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.415" level="INFO">${laskuri} = 83</msg>
+<status status="PASS" endtime="20190614 16:05:37.415" starttime="20190614 16:05:37.414"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.415" starttime="20190614 16:05:37.414"></status>
+</kw>
+<kw type="foritem" name="${var} = 82">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.416" level="INFO">${laskuri} = 84</msg>
+<status status="PASS" endtime="20190614 16:05:37.416" starttime="20190614 16:05:37.416"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.416" starttime="20190614 16:05:37.416"></status>
+</kw>
+<kw type="foritem" name="${var} = 83">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.418" level="INFO">${laskuri} = 85</msg>
+<status status="PASS" endtime="20190614 16:05:37.418" starttime="20190614 16:05:37.417"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.418" starttime="20190614 16:05:37.417"></status>
+</kw>
+<kw type="foritem" name="${var} = 84">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.419" level="INFO">${laskuri} = 86</msg>
+<status status="PASS" endtime="20190614 16:05:37.419" starttime="20190614 16:05:37.418"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.419" starttime="20190614 16:05:37.418"></status>
+</kw>
+<kw type="foritem" name="${var} = 85">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.420" level="INFO">${laskuri} = 87</msg>
+<status status="PASS" endtime="20190614 16:05:37.420" starttime="20190614 16:05:37.420"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.421" starttime="20190614 16:05:37.419"></status>
+</kw>
+<kw type="foritem" name="${var} = 86">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.422" level="INFO">${laskuri} = 88</msg>
+<status status="PASS" endtime="20190614 16:05:37.422" starttime="20190614 16:05:37.421"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.422" starttime="20190614 16:05:37.421"></status>
+</kw>
+<kw type="foritem" name="${var} = 87">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.423" level="INFO">${laskuri} = 89</msg>
+<status status="PASS" endtime="20190614 16:05:37.423" starttime="20190614 16:05:37.422"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.423" starttime="20190614 16:05:37.422"></status>
+</kw>
+<kw type="foritem" name="${var} = 88">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.424" level="INFO">${laskuri} = 90</msg>
+<status status="PASS" endtime="20190614 16:05:37.424" starttime="20190614 16:05:37.424"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.425" starttime="20190614 16:05:37.423"></status>
+</kw>
+<kw type="foritem" name="${var} = 89">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.426" level="INFO">${laskuri} = 91</msg>
+<status status="PASS" endtime="20190614 16:05:37.426" starttime="20190614 16:05:37.425"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.426" starttime="20190614 16:05:37.425"></status>
+</kw>
+<kw type="foritem" name="${var} = 90">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.427" level="INFO">${laskuri} = 92</msg>
+<status status="PASS" endtime="20190614 16:05:37.427" starttime="20190614 16:05:37.426"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.427" starttime="20190614 16:05:37.426"></status>
+</kw>
+<kw type="foritem" name="${var} = 91">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.428" level="INFO">${laskuri} = 93</msg>
+<status status="PASS" endtime="20190614 16:05:37.428" starttime="20190614 16:05:37.427"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.428" starttime="20190614 16:05:37.427"></status>
+</kw>
+<kw type="foritem" name="${var} = 92">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.430" level="INFO">${laskuri} = 94</msg>
+<status status="PASS" endtime="20190614 16:05:37.430" starttime="20190614 16:05:37.429"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.430" starttime="20190614 16:05:37.429"></status>
+</kw>
+<kw type="foritem" name="${var} = 93">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.431" level="INFO">${laskuri} = 95</msg>
+<status status="PASS" endtime="20190614 16:05:37.431" starttime="20190614 16:05:37.430"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.431" starttime="20190614 16:05:37.430"></status>
+</kw>
+<kw type="foritem" name="${var} = 94">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.432" level="INFO">${laskuri} = 96</msg>
+<status status="PASS" endtime="20190614 16:05:37.432" starttime="20190614 16:05:37.432"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.433" starttime="20190614 16:05:37.431"></status>
+</kw>
+<kw type="foritem" name="${var} = 95">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.434" level="INFO">${laskuri} = 97</msg>
+<status status="PASS" endtime="20190614 16:05:37.434" starttime="20190614 16:05:37.433"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.434" starttime="20190614 16:05:37.433"></status>
+</kw>
+<kw type="foritem" name="${var} = 96">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.435" level="INFO">${laskuri} = 98</msg>
+<status status="PASS" endtime="20190614 16:05:37.435" starttime="20190614 16:05:37.434"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.435" starttime="20190614 16:05:37.434"></status>
+</kw>
+<kw type="foritem" name="${var} = 97">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.436" level="INFO">${laskuri} = 99</msg>
+<status status="PASS" endtime="20190614 16:05:37.436" starttime="20190614 16:05:37.435"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.436" starttime="20190614 16:05:37.435"></status>
+</kw>
+<kw type="foritem" name="${var} = 98">
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${laskuri}+${yksi}</arg>
+</arguments>
+<assign>
+<var>${laskuri}</var>
+</assign>
+<msg timestamp="20190614 16:05:37.437" level="INFO">${laskuri} = 100</msg>
+<status status="PASS" endtime="20190614 16:05:37.438" starttime="20190614 16:05:37.437"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.438" starttime="20190614 16:05:37.437"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.438" starttime="20190614 16:05:37.308"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${laskuri}</arg>
+</arguments>
+<msg timestamp="20190614 16:05:37.439" level="INFO">100</msg>
+<status status="PASS" endtime="20190614 16:05:37.439" starttime="20190614 16:05:37.439"></status>
+</kw>
+<status status="PASS" endtime="20190614 16:05:37.440" critical="yes" starttime="20190614 16:05:37.305"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20190614 16:05:37.446" starttime="20190614 16:05:37.446"></status>
+</kw>
+<status status="FAIL" endtime="20190614 16:05:37.446" starttime="20190614 16:05:21.995"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="8">Critical Tests</stat>
+<stat fail="3" pass="8">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">Jos</stat>
+<stat fail="1" pass="0">Kolmas</stat>
+<stat fail="0" pass="1">Sanity</stat>
+<stat fail="0" pass="1">Smoke</stat>
+<stat fail="1" pass="0">Toka</stat>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="MoB" pass="8">MoB</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
