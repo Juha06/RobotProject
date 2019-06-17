@@ -67,6 +67,8 @@ Laskuri
     :FOR    ${var}    in range    99
     \    ${laskuri}=    Evaluate    ${laskuri}+${yksi}
     Log    ${laskuri}
+Koe GitHub
+    log    GitHub commit testi
 *** Keywords ***
 Login
     Input Text    id=username    @{CREDENTIALS}[0]
